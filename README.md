@@ -8,11 +8,10 @@ Se implementa un analizador Lexico agregando que se puedan reconcer los simbolos
 ### 2. Ejecución en Consola
 
 ![docs/ejecucion_consola.png](https://github.com/Straiandl/AnalizadorLexicoTabla/blob/8dff9b7c048b9fd0c2423fb0ff05f538f5b2e76c/Lexico1.png)
-*Figura 2: Ejemplo de tokenización de código fuente en la terminal con los IDs numéricos.*
 
 ---
 
-## 📊 Tabla de Especificación de Tipos (LR1)
+##  Tabla de Especificación de Tipos (LR1)
 
 El analizador retorna una tupla `(lexema, tipo_id)` donde `tipo_id` corresponde al entero asignado a cada columna de la gramática $LR(1)$:
 
@@ -45,7 +44,7 @@ El analizador retorna una tupla `(lexema, tipo_id)` donde `tipo_id` corresponde 
 
 ---
 
-## 🛠️ Estructura de la Máquina de Estados (AFD)
+##  Estructura de la Máquina de Estados (AFD)
 
 * **Estado 0:** Estado inicial distribuidor. Evalúa el carácter inicial, reconoce símbolos simples inmediatamente o transiciona a estados acumuladores.
 * **Estado 1:** Acumula caracteres alfanuméricos para `identificador`. Al finalizar, consulta una tabla de palabras reservadas para asignar el tipo correspondiente (`4`, `19`, `20`, `21`, `22` u `0`).
@@ -55,7 +54,7 @@ El analizador retorna una tupla `(lexema, tipo_id)` donde `tipo_id` corresponde 
 
 ---
 
-## 🚀 Requisitos e Instalación
+##  Requisitos e Instalación
 
 ### Prerrequisitos
 
@@ -63,7 +62,7 @@ El analizador retorna una tupla `(lexema, tipo_id)` donde `tipo_id` corresponde 
 
 ---
 
-## 💻 Uso
+##  Uso
 
 Ejecuta el script directamente desde la terminal:
 
@@ -114,22 +113,3 @@ Lexema: }               | Tipo (ID): 17
 Lexema: }               | Tipo (ID): 17
 Lexema: $               | Tipo (ID): 23
 ```
-
----
-
-## 📁 Estructura del Repositorio
-
-```text
-.
-├── AnalizadorLexico.py   # Código fuente del analizador léxico en Python
-├── README.md             # Documentación general del proyecto
-└── docs/                 # Recursos gráficos e imágenes
-    ├── diagrama_afd.png      # Esquema visual del AFD
-    └── ejecucion_consola.png # Captura de prueba de ejecución
-```
-
----
-
-## 🎓 Materia y Profesor
-* **Asignatura:** Taller de Compiladores / Traductores de Lenguaje 2
-* **Docente:** Ing. Michel Emanuel López Franco
