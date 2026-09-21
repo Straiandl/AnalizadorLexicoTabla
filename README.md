@@ -7,7 +7,7 @@ Se implementa un analizador Lexico agregando que se puedan reconcer los simbolos
 
 ### 2. Ejecución en Consola
 
-![Salida en Terminal](docs/ejecucion_consola.png)
+![docs/ejecucion_consola.png](https://github.com/Straiandl/AnalizadorLexicoTabla/blob/8dff9b7c048b9fd0c2423fb0ff05f538f5b2e76c/Lexico1.png)
 *Figura 2: Ejemplo de tokenización de código fuente en la terminal con los IDs numéricos.*
 
 ---
